@@ -41,5 +41,5 @@ for img_path in tqdm(image_paths):
     mask_paths.append(mask_path)
     text_paths.append(text_path)
     width_paths.append(width_path)
-process_images(images, mask_paths, text_paths, width_paths, base_path)
+main.process_images(images, mask_paths, text_paths, width_paths, base_path)
 ```
