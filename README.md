@@ -16,9 +16,7 @@ x  = seg_model.predict_multiple(inp_dir = path, out_dir = pred_path)
 ```
 ## Load weights
 ```
-os.environ["CUDA_VISIBLE_DEVICES"]="1"
 RowModel = CropRowDetectionModel(3,1) # 3 input channels (RGB) and 1 output channel
-device = torch.device("cuda")
 RowModel.load_state_dict(torch.load('./best_row.pt'))
 ```
 ## Row Detection
